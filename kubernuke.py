@@ -66,7 +66,7 @@ while k == 0:
 		print "Parameters: "+var2
 		while y == 0:
 			command2 = raw_input('\nCMD: ')
-			regex = '[^\s]\w+' #
+			regex = '/[^a-zA-Z0-9]|[^ ]+' #
 			content = command2
 			findings = re.findall(regex, content)
 			saved = ('&command='.join(findings))
